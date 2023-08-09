@@ -1,0 +1,57 @@
+@import "./sass/styles.scss";
+@import 'sweetalert2/src/sweetalert2.scss';
+
+body {
+    background:rgb(24, 48, 85);
+    overflow: hidden;
+}
+
+.ReactModal__Overlay {
+    z-index: 4999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.75) !important;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+
+.ReactModal__Content {
+    padding: 0 !important;
+    position: relative !important;
+    border: none  !important;
+    overflow: hidden !important;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+
+.react-daterange-picker__wrapper {
+    border: 0px !important;
+}
+
+.swal2-container {
+    z-index: 900000;
+}
+
+.ace_editor, .ace_editor div {
+    font-family:monospace;
+}
+
+.beaconMask {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .9) !important;
+}

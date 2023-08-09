@@ -1,0 +1,21 @@
+@import "./variables";
+
+// ======== Overwriting redux-toastr styles =============
+.redux-toastr .top-left, .redux-toastr .top-right, .redux-toastr .top-center, .redux-toastr .bottom-left, .redux-toastr .bottom-right, .redux-toastr .bottom-center {
+
+  width : 600px;
+
+
+  .update-message-toast {
+    font-size: 1em;
+    font-weight: bold;
+
+  }
+  
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  background: #41c186;
+  // border-radius: 15px;
+  color: white;
+}
